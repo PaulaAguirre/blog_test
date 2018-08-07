@@ -66,11 +66,15 @@ Route::get('/', function () {
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
 
+
 Auth::routes();
 
 
 Route::group (['middleware'=>'auth'], function (){
-    Route::view ('index_exp', 'index_exp');
+    Route::view('chart.chart', 'chart');
+    Route::get('/chart', function (){
+        return view ('chart.chart');
+    });
     Route::resource ('roles', 'RoleController');
     Route::resource('users', 'UserController');
     Route::resource ('gerencias', 'GerenciaController');

@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="{{asset('css/_all-skins.min.css')}}">
     <link rel="apple-touch-icon" href="{{asset('img/apple-touch-icon.png')}}">
     <link rel="shortcut icon" href="{{asset('img/lupa.png')}}" >
+    <!-- Charts -->
+
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -257,6 +259,11 @@
 <!-- Bootstrap 3.3.5 -->
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 <script src="{{asset('js/bootstrap-select.min.js')}}"></script>
+<script src="{{asset ('https://code.highcharts.com/highcharts.js')}}"></script>
+<script src="{{asset ('https://code.highcharts.com/modules/series-label.js')}}"></script>
+<script src="{{asset ('https://code.highcharts.com/modules/exporting.js')}}"></script>
+<script src="{{asset ('https://code.highcharts.com/modules/export-data.js')}}"></script>
+
 
 <!-- AdminLTE App -->
 <script src="{{asset('js/app.min.js')}}"></script>
